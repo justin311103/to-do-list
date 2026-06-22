@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TODO List</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="todo-card">
+      <header class="todo-header">
+        <h1>TODO List</h1>
+        <p>使用本頁面管理你的待辦事項，內容會自動儲存在瀏覽器。</p>
+      </header>
+
+      <form id="todo-form" class="todo-form" aria-label="新增待辦事項">
+        <input id="todo-input" type="text" placeholder="輸入新的待辦事項" aria-label="待辦事項名稱" autocomplete="off" />
+        <button type="submit">新增</button>
+      </form>
+
+      <div class="todo-controls">
+        <button id="clear-completed" type="button">清除已完成</button>
+        <span id="task-count" class="task-count">0 個待辦</span>
+      </div>
+
+      <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
